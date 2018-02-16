@@ -3,12 +3,13 @@
   <groupId>net.mm2d</groupId>
   <artifactId>mmupnp</artifactId>
   <versioning>
-    <release>1.5.0</release>
+    <release>1.5.1</release>
     <versions>
       <version>1.3.0</version>
       <version>1.3.1</version>
       <version>1.5.0</version>
+      <version>1.5.1</version>
     </versions>
-    <lastUpdated>20180204135909</lastUpdated>
+    <lastUpdated>20180216122622</lastUpdated>
   </versioning>
 </metadata>
