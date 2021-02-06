@@ -6,6 +6,8 @@
   <artifactId>preference</artifactId>
   <version>0.0.2</version>
   <packaging>aar</packaging>
+  <name>preference</name>
+  <url>https://github.com/ohmae/preference-activity-compat</url>
   <licenses>
     <license>
       <name>The MIT License</name>
@@ -13,24 +15,28 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  <scm>
+    <connection>https://github.com/ohmae/preference-activity-compat.git</connection>
+    <url>https://github.com/ohmae/preference-activity-compat</url>
+  </scm>
   <dependencies>
     <dependency>
       <groupId>com.android.support</groupId>
       <artifactId>appcompat-v7</artifactId>
       <version>27.1.1</version>
-      <scope>compile</scope>
+      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.android.support</groupId>
       <artifactId>support-v4</artifactId>
       <version>27.1.1</version>
-      <scope>compile</scope>
+      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.android.support</groupId>
       <artifactId>preference-v7</artifactId>
       <version>27.1.1</version>
-      <scope>compile</scope>
+      <scope>runtime</scope>
     </dependency>
   </dependencies>
 </project>

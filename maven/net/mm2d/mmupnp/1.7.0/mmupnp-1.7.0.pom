@@ -5,6 +5,8 @@
   <groupId>net.mm2d</groupId>
   <artifactId>mmupnp</artifactId>
   <version>1.7.0</version>
+  <name>mmupnp</name>
+  <url>https://github.com/ohmae/mmupnp</url>
   <licenses>
     <license>
       <name>The MIT License</name>
@@ -12,6 +14,10 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  <scm>
+    <connection>https://github.com/ohmae/mmupnp.git</connection>
+    <url>https://github.com/ohmae/mmupnp</url>
+  </scm>
   <dependencies>
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
