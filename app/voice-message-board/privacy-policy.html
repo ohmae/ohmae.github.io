@@ -1,77 +1,198 @@
+
 <!DOCTYPE html>
-<html>
-<title>Privacy Policy - Voice Message Board</title>
-<style>
-    body {
-        font-size: 9pt;
-        background-color: #FFFFFF;
-        color: #000000;
-        font-family: Roboto, sans-serif;
-        line-height: 1.5;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    a {
-        color: #304FFE;
-    }
-    h1 {
-        font-size: 12pt;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-    h2 {
-        font-size: 10pt;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-    p {
-        margin-bottom: 1rem;
-    }
-    ul {
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-    }
-    li {
-        margin-bottom: 0.7rem;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        body {
-            background-color: #000000;
-            color: #FFFFFF;
-        }
-        a {
-            color: #82B1FF;
-        }
-    }
-</style>
-
+<html lang="en">
 <head>
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Voice Message Board</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --background: #ffffff;
+            --foreground: #1f1f1f;
+            --muted: #5f6368;
+            --border: #dadce0;
+            --accent: #1a73e8;
+        }
 
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #121212;
+                --foreground: #eeeeee;
+                --muted: #b0b0b0;
+                --border: #3a3a3a;
+                --accent: #8ab4f8;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--foreground);
+            font-family: sans-serif;
+        }
+
+        main {
+            width: min(100%, 760px);
+            margin: 0 auto;
+            padding: 8px;
+        }
+
+        header {
+            margin-bottom: 28px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+        }
+
+        ul {
+            margin: 0 0 18px;
+            padding-left: 1.4rem;
+            line-height: 1.7em;
+        }
+
+        li {
+            margin: 0 0 10px;
+        }
+
+        li ul {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--accent);
+            overflow-wrap: anywhere;
+        }
+
+        .language-select {
+            margin-top: 20px;
+        }
+
+        .language-select label {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .language-select select {
+            min-width: 12rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--background);
+            color: var(--foreground);
+            padding: 8px 36px 8px 10px;
+            font: inherit;
+        }
+
+        .policy {
+            display: none;
+        }
+
+        .policy[data-active="true"] {
+            display: block;
+        }
+        .note {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
 <body>
-    <article>
+<main>
+    <header>
+        <div class="language-select">
+            <label for="language-select">Language</label>
+            <select id="language-select" autocomplete="off">
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+    </header>
+
+    <article id="policy-en" class="policy" lang="en" data-active="true">
         <h1>Privacy Policy</h1>
-        <h2>English
-        </h2>
-        <ul>
-            <li>AdMob will display ads. AdMob may collect user information for the purpose of delivering targeting advertisements.</li>
-            <li>Firebase is used to transmit information such as crash and performance to improve the quality of
-                applications.
-                As a result, user information may be collected.</li>
-        </ul>
-        <p>Please check Google's privacy policy for details. <a
-                href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+        <p>
+            "Voice Message Board" (hereinafter "this app") is developed and provided by OHMAE Ryosuke.
+            This privacy policy outlines how user information is handled in this app.
         </p>
-        <h2>日本語</h2>
         <ul>
-            <li>AdMobによる広告表示を行います。AdMobはターゲティング広告の配信を目的として利用者の情報を収集する場合があります。</li>
-            <li>Firebaseを使用しアプリの品質を高めるためにクラッシュやパフォーマンスなどの情報送信を行っております。
-                それに伴い、利用者の情報が収集される場合があります。</li>
+            <li>
+                <strong>App Quality Improvement & Analytics (Firebase)</strong><br>
+                This app uses Firebase (Firebase Crashlytics, etc.) provided by Google Inc. to improve app quality, fix
+                crashes, and analyze usage. Accordingly, crash logs, performance data, and device identification
+                information may be automatically transmitted and collected.
+            </li>
         </ul>
-        <p>詳細はGoogleのプライバシーポリシーをご確認ください。
+        <p>
+            Please check Google's privacy policy for details regarding data collection and usage by each service.
             <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
         </p>
+        <h2>Contact</h2>
+        <p>
+            If you have any questions, feedback, or inquiries regarding the handling of user information in this app,
+            please contact us at the following email address:<br>
+            <a href="mailto:ryo@mm2d.net">ryo@mm2d.net</a>
+        </p>
+        <p class="note">
+            Last updated: July 2, 2026
+        </p>
     </article>
+
+    <article id="policy-ja" class="policy" lang="ja" data-active="false">
+        <h1>プライバシーポリシー</h1>
+        <p>
+            「声で伝言板」（以下「本アプリ」）は、OHMAE Ryosuke が開発・提供しています。<br/>
+            本アプリにおける利用者の情報の取り扱いについて、以下の通りプライバシーポリシーを定めます。
+        </p>
+        <ul>
+            <li>
+                <strong>アプリの品質改善・分析（Firebase）</strong><br>
+                本アプリでは、アプリの品質向上、クラッシュの修正、および利用状況の分析のために、Google Inc.が提供する Firebase（Firebase Crashlytics等）を使用しています。
+                これに伴い、クラッシュログ、パフォーマンスデータ、デバイスの識別情報などが自動的に送信され、収集される場合があります。
+            </li>
+        </ul>
+        <p>
+            各サービスのデータ収集・利用の詳細は、Googleのプライバシーポリシーをご確認ください。
+            <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+        </p>
+        <h2>お問い合わせ</h2>
+        <p>
+            本アプリにおける利用者の情報の取り扱いに関するご質問、ご意見、またはお問い合わせは、以下の連絡先までご連絡ください。<br>
+            <a href="mailto:ryo@mm2d.net">ryo@mm2d.net</a>
+        </p>
+        <p class="note">
+            最終更新日：2026年7月2日
+        </p>
+    </article>
+</main>
+
+<script>
+    const select = document.getElementById("language-select");
+    const policies = document.querySelectorAll(".policy");
+
+    function normalizeLanguage(language) {
+        return language && language.toLowerCase().startsWith("ja") ? "ja" : "en";
+    }
+
+    function applyLanguage(language) {
+        document.documentElement.lang = language;
+        select.value = language;
+
+        policies.forEach((policy) => {
+            policy.dataset.active = policy.lang === language ? "true" : "false";
+        });
+    }
+
+    select.addEventListener("change", (event) => {
+        applyLanguage(event.target.value);
+    });
+
+    applyLanguage(normalizeLanguage(navigator.language));
+</script>
 </body>
 </html>
